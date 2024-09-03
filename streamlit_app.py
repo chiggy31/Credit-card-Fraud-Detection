@@ -4,7 +4,7 @@ from PIL import Image
 import joblib
 
 # Load the trained model
-model = joblib.load(r"D:\major project\models\final_model.pkl")
+model = joblib.load('models/final_model.pkl')
 
 # Set page configuration
 st.set_page_config(
