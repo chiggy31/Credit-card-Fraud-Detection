@@ -29,7 +29,7 @@ def predict_fraud(amt, gender, city_pop, age, trans_month, trans_year, latitudin
 #st.title("Credit Card Fraud Prediction") 
 html_temp = """
 <div style="background:#8325be ;padding:10px">
-<h2 style="color:white;text-align:center;">Online Fraud Prediction ML App </h2>
+<h2 style="color:white;text-align:center;">Credit Card Fraud Prediction ML App </h2>
 </div>
 """
 st.markdown(html_temp, unsafe_allow_html=True)
@@ -116,3 +116,23 @@ if st.button("Predict the Fraud"):
         </div>
         """
         st.markdown(html_temp, unsafe_allow_html=True)
+
+# Add a footer
+st.empty()
+st.markdown("""
+    <style>
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: orange;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+    <div class="footer">
+        <p>Created by Chirag Goyal | Contact: <a href="mailto:chiragunion212@gmail.com">chiragunion212@gmail.com</a></p>
+    </div>
+    """, unsafe_allow_html=True)
